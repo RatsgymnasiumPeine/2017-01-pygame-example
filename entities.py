@@ -18,6 +18,7 @@ class EntityManager(object):
     """
     def addEntity(self, entity):
         if(isinstance(entity, Entity)):
+            print "Added Entity to Manager:", entity
             self._entities.append(entity)
         else:
             print "EntityEngine: tried to add non entity: ", entity
@@ -25,6 +26,7 @@ class EntityManager(object):
     """
     Loescht ein Entity aus der Liste der Entities"""
     def removeEntity(self, entity):
+        print "Removed Entity from Manager:", entity
         self._entities.remove(entity)
 
     """
