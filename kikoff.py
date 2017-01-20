@@ -45,6 +45,7 @@ class Game(object):
     def render(self):
         self.screen.fill((0, 0, 0))
         entityManager.render(self.screen)
+	# Render !!!
 
     """
         Die Loop
